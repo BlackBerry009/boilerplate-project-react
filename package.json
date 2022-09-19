@@ -29,7 +29,17 @@
     ]
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "*.{less,md,json}": [
+      "prettier --write"
+    ],
+    "src/**/*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix --max-warnings 0"
+    ],
+    "src/**/*.ts?(x)": [
+      "prettier --parser=typescript --write",
+      "eslint --fix --max-warnings 0"
+    ]
   },
   "browserslist": {
     "production": [
