@@ -1,0 +1,25 @@
+.app-layout {
+  height: 100vh;
+  .logo-wrapper {
+    display: flex;
+    height: 64px;
+    justify-content: center;
+    align-items: center;
+    .logo {
+    height: 100%;
+    }
+  }
+  .header {
+    padding: 0px;
+  }
+  .content {
+    margin: 0px 4px;
+    .view {
+        padding: 6px;
+        min-height: 90%;
+    }
+  }
+  .footer {
+    text-align: center;
+  }
+}

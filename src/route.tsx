@@ -1,7 +1,6 @@
 import { RouteObject, useRoutes } from 'react-router-dom';
 import { LayoutApp } from './components/Layout';
-import { Home } from './pages/Home';
-import { Show } from './pages/Show';
+import Demo from './pages/Demo';
 
 const routes: RouteObject[] = [
   {
@@ -10,15 +9,11 @@ const routes: RouteObject[] = [
     children: [
       {
         index: true,
-        element: <Home />
+        element: <Demo />
       },
       {
-        path: 'home',
-        element: <Home />
-      },
-      {
-        path: 'show',
-        element: <Show />
+        path: 'demo',
+        element: <Demo />
       }
     ]
   }
